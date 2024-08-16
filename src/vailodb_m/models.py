@@ -116,7 +116,6 @@ class Mall_services_setting(models.Model):
     escalation_number = models.CharField(max_length=100, null=True, blank=True)
     escalation_hours = models.TimeField(null=True, blank=True)
     header_text = models.CharField(max_length=300, null=True, blank=True)
-    button_name = models.CharField(max_length=255, null=True, blank=True)
     vailo_record_creation = models.DateTimeField(auto_now_add=True, auto_now=False)
     vailo_record_last_update = models.DateTimeField(auto_now_add=False, auto_now=True)
     vailo_record_status = models.IntegerField(null=True, blank=True)
@@ -336,6 +335,15 @@ class Key_products(models.Model):
     availability = models.CharField(max_length=100,choices=PRODUCT_AVAILABILTY_CHOICES, null=True, blank=True)
     price = models.IntegerField(null=True, blank=True)
     currency = models.CharField(max_length=100, choices=CURRENCY_CHOICES, null=True, blank=True)  # INR/USD/...
+    vailo_record_last_update = models.DateTimeField(auto_now_add=False, auto_now=True)
+    vailo_record_creation = models.DateTimeField(auto_now_add=True, auto_now=False)
+    vailo_record_status = models.IntegerField(null=True, blank=True)
+
+
+
+class test_model(models.Model):
+    client = models.ForeignKey(User, on_delete=models.CASCADE)
+    marketplace = models.ForeignKey(Mall_Marketplace, on_delete=models.CASCADE, null=True, blank=True)
     vailo_record_last_update = models.DateTimeField(auto_now_add=False, auto_now=True)
     vailo_record_creation = models.DateTimeField(auto_now_add=True, auto_now=False)
     vailo_record_status = models.IntegerField(null=True, blank=True)
