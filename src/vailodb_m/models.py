@@ -115,7 +115,6 @@ class Mall_services_setting(models.Model):
     control = models.CharField(max_length=100, choices=SERVICE_SEETINGS_CONTROL, null=True, blank=True)
     escalation_number = models.CharField(max_length=100, null=True, blank=True)
     escalation_hours = models.TimeField(null=True, blank=True)
-    body_text = models.CharField(max_length=1024, null=True, blank=True)
     header_text = models.CharField(max_length=300, null=True, blank=True)
     button_name = models.CharField(max_length=255, null=True, blank=True)
     vailo_record_creation = models.DateTimeField(auto_now_add=True, auto_now=False)
@@ -243,7 +242,6 @@ class Events(models.Model):
     image = models.ImageField(upload_to='Image', null=True, blank=True)
     video = models.FileField(upload_to='videos_uploaded', null=True, validators=[
         FileExtensionValidator(allowed_extensions=['MOV', 'avi', 'mp4', 'webm', 'mkv'])])
-    body_text = models.CharField(max_length=1024, null=True, blank=True)
     header_text = models.CharField(max_length=300, null=True, blank=True)
     button_name = models.CharField(max_length=255, null=True, blank=True)
     vailo_record_creation = models.DateTimeField(auto_now_add=True, auto_now=False)
