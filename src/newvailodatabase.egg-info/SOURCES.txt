@@ -66,6 +66,7 @@ src/vailodb_a/migrations/0015_appointment_marketplace_appointment_link_text_and_
 src/vailodb_a/migrations/0016_appointment_marketplace_payment_link_text.py
 src/vailodb_a/migrations/0017_alter_consultant_details_consultant_timezone.py
 src/vailodb_a/migrations/0018_alter_consultant_details_consultant_timezone.py
+src/vailodb_a/migrations/0019_alter_consultant_details_consultant_timezone.py
 src/vailodb_a/migrations/__init__.py
 src/vailodb_b/__init__.py
 src/vailodb_b/admin.py
@@ -216,6 +217,7 @@ src/vailodb_m/migrations/0004_feedback_responses_marketplace_key_products.py
 src/vailodb_m/migrations/0005_malls_marketplace_settings_template_id_and_more.py
 src/vailodb_m/migrations/0006_restaurant_category_restaurant_parent_id_and_more.py
 src/vailodb_m/migrations/0007_events_body_text_events_button_name_and_more.py
+src/vailodb_m/migrations/0008_remove_events_body_text_and_more.py
 src/vailodb_m/migrations/__init__.py
 src/vailodb_n/__init__.py
 src/vailodb_n/admin.py

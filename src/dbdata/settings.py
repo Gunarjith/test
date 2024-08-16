@@ -40,6 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'vailodb',
+    'vailodb_b',
+    'vailodb_a',
+    'vailodb_s',
+    'vailodb_h',
+    'vailodb_m',
+    'vailodb_f',
+
 
 ]
 
